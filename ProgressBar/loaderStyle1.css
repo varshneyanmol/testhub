@@ -1,13 +1,14 @@
 .cube-grid-loader1 {
   width: 40px;
   height: 40px;
-  margin: 50px auto;
+  margin-top: 100px; 
+  margin-left: 250px;
 }
 
 .cube-grid-loader1 .cube-loader1 {
   width: 50%;
   height: 50%;
-  background-color: #333;
+  background-color: #DB4730;
   float: left;
   -webkit-animation: cubeGridScaleTransform 1.3s infinite ease-in-out;
           animation: cubeGridScaleTransform 1.3s infinite ease-in-out; 

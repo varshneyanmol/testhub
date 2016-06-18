@@ -1,0 +1,126 @@
+.loader4 {
+	position: relative;
+	width: 100px;
+	height: 25px;
+	margin-top: 0px;
+	margin-right: 250px;
+	float: right;
+	border-bottom: 1px solid #C2B5C9;
+	box-shadow: 1px 2px 2px rgba(91,86, 94,0.6);
+}
+
+.loader4 .wall {
+	width: 10%; /*10px*/
+	height: 100%;
+	background-color: #C2B5C9;
+	/*border-bottom: 1px solid #C2B5C9;*/
+	/*box-shadow: 0px 0px 5px rgba(91, 86, 94,0.6);*/
+	/*box-shadow: 0px 0px 1px 1px rgba(91,86,94,0.4); */
+	box-shadow: 1px 1px 2px 1px rgba(91,86,94,0.4); 
+}
+
+.loader4 .wall-left {
+	float: left;
+	-webkit-animation: wallTranslateLeft 1s infinite ease-in-out;
+          animation: wallTranslateLeft 1s infinite ease-in-out;
+     -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.loader4 .wall-right {
+	float: right;
+	-webkit-animation: wallTranslateRight 1s infinite ease-in-out;
+          animation: wallTranslateRight 1s infinite ease-in-out;
+     -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+
+.loader4 .ball {
+	width: 10%; /*10px*/
+	height: 40%;
+	background-color: #C2B5C9;
+	border-radius: 50%;
+	box-shadow: 1px 1px 2px 0px rgba(91, 86, 94, 0.8);
+}
+
+.loader4 .ball-left {
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+	-webkit-animation: ballLeftPosition 1s infinite ease-in-out;
+          animation: ballLeftPosition 1s infinite ease-in-out;
+	-webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.loader4 .ball-right {
+	position: absolute;
+	bottom: 0;
+	left: 50px;
+	-webkit-animation: ballRightPosition 1s infinite ease-in-out;
+          animation: ballRightPosition 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes ballRightPosition {
+  0%, 50%, 100% {
+    left: 49px;
+  } 25% {
+    left: 79px; 
+  }
+}
+
+@keyframes ballRightPosition {
+  0%, 50%, 100% {
+   	left: 49px;
+  } 25% {
+    left: 79px; 
+  } 
+}
+
+@-webkit-keyframes ballLeftPosition {
+  0%, 50%, 100% {
+    left: 39px;
+  } 25% {
+    left: 9px; 
+  }
+}
+
+@keyframes ballLeftPosition {
+  0%, 50%, 100% {
+   	left: 39px;
+  } 25% {
+    left: 9px; 
+  } 
+}
+
+@-webkit-keyframes wallTranslateLeft {
+  0%, 50%, 100% {
+   	transform: translateX(0);
+  } 25% {
+    transform: translateX(-4px);
+  } 
+}
+
+@keyframes wallTranslateLeft {
+  0%, 50%, 100% {
+   	transform: translateX(0);
+  } 25% {
+    transform: translateX(-4px);
+  } 
+}
+
+@-webkit-keyframes wallTranslateRight {
+  0%, 50%, 100% {
+   	transform: translateX(0);
+  } 25% {
+    transform: translateX(4px);
+  } 
+}
+
+@keyframes wallTranslateRight {
+  0%, 50%, 100% {
+   	transform: translateX(0);
+  } 25% {
+    transform: translateX(4px);
+  } 
+}

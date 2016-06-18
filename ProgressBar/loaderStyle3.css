@@ -1,52 +1,52 @@
-.cube-loader3 {
+.loader3 {
 	position: relative;
 	width: 100px;
 	height: 25px;
-	margin: 250px auto;
+	margin: 200px auto;
 	border-bottom: 1px solid #292229;
 	box-shadow: 0 2px 2px #1a141a;
 }
 
-.cube-loader3 .wall {
+.loader3 .wall {
 	width: 10%; /*10px*/
 	height: 100%;
 	background-color: #292229;
 }
 
-.cube-loader3 .wall-left {
+.loader3 .wall-left {
 	float: left;
 }
 
-.cube-loader3 .wall-right {
+.loader3 .wall-right {
 	float: right;
 }
 
-.cube-loader3 .ball {
+.loader3 .ball {
 	width: 10%; /*10px*/
 	height: 40%;
 	background-color: #2b404a;
 	border-radius: 50%;
 }
 
-.cube-loader3 .ball-left {
+.loader3 .ball-left {
 	position: absolute;
 	bottom: 0;
 	left: 40px;
-	-webkit-animation: ballLeftPosition 1s infinite ease-in-out;
-          animation: ballLeftPosition 1s infinite ease-in-out;
+	-webkit-animation: ballLeftPosition-loader3 1s infinite ease-in-out;
+          animation: ballLeftPosition-loader3 1s infinite ease-in-out;
 	-webkit-animation-delay: 1s;
           animation-delay: 1s;
 }
 
-.cube-loader3 .ball-right {
+.loader3 .ball-right {
 	position: absolute;
 	bottom: 0;
 	left: 50px;
-	-webkit-animation: ballRightPosition 1s infinite ease-in-out;
-          animation: ballRightPosition 1s infinite ease-in-out;
+	-webkit-animation: ballRightPosition-loader3 1s infinite ease-in-out;
+          animation: ballRightPosition-loader3 1s infinite ease-in-out;
 }
 
-@-webkit-keyframes ballRightPosition {
+@-webkit-keyframes ballRightPosition-loader3 {
   0%, 100% {
     left: 50px;
   } 50% {
@@ -54,7 +54,7 @@
   }
 }
 
-@keyframes ballRightPosition {
+@keyframes ballRightPosition-loader3 {
   0%, 100% {
    	left: 50px;
   } 50% {
@@ -62,7 +62,7 @@
   } 
 }
 
-@-webkit-keyframes ballLeftPosition {
+@-webkit-keyframes ballLeftPosition-loader3 {
   0%, 100% {
     left: 40px;
   } 50% {
@@ -70,7 +70,7 @@
   }
 }
 
-@keyframes ballLeftPosition {
+@keyframes ballLeftPosition-loader3 {
   0%, 100% {
    	left: 40px;
   } 50% {
