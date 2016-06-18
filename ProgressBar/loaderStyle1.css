@@ -1,0 +1,47 @@
+.cube-grid-loader1 {
+  width: 40px;
+  height: 40px;
+  margin: 50px auto;
+}
+
+.cube-grid-loader1 .cube-loader1 {
+  width: 50%;
+  height: 50%;
+  background-color: #333;
+  float: left;
+  -webkit-animation: cubeGridScaleTransform 1.3s infinite ease-in-out;
+          animation: cubeGridScaleTransform 1.3s infinite ease-in-out; 
+}
+.cube-grid-loader1 .cube1-loader1 {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s; }
+.cube-grid-loader1 .cube2-loader1 {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s; }
+.cube-grid-loader1 .cube3-loader1 {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; }
+.cube-grid-loader1 .cube4-loader1 {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s; }
+
+
+@-webkit-keyframes cubeGridScaleTransform {
+  0%, 70%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  } 35% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);  
+  }
+}
+
+@keyframes cubeGridScaleTransform {
+  0%, 70%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  } 35% {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  } 
+}
